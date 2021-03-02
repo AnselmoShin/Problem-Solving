@@ -1,6 +1,6 @@
 """
 Time:
-10m 22s /13m
+10m 22s/13m
 
 Try:
 0 Debug: Fail
