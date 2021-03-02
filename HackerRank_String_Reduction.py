@@ -19,7 +19,6 @@ def solution():
         flag[each] = False
     answer = 0
     for each in given:
-        # print(each, flag[each])
         if flag[each]:
             answer += 1
         else:
