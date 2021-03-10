@@ -1,6 +1,6 @@
 import sys
 input = sys.stdin.readline
-################################solution 1################################
+#################################solution 1#################################
 # TimeOut Solution
 def solution1(para): 
     for candi in range(1, min(para)+1):
@@ -10,7 +10,8 @@ def solution1(para):
                 flag = False
         if flag:
             print(candi)
-################################solution 2################################
+#################################solution 2#################################
+#Use Euclidean algorithm
 def Euclid(num1, num2):
     if num1 == 0:
         return num2
@@ -25,7 +26,7 @@ def solution2(para):
         if gcd%candi == 0:
             print(candi)
     print(gcd)
-##########################################################################
+############################################################################
 if __name__ == "__main__":
     n = int(input())
     nums = list(map(int,input().split(" ")))
