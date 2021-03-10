@@ -1,7 +1,8 @@
 import sys
 input = sys.stdin.readline
-
-def solution1(para): # TimeOut Solution
+################################solution 1################################
+# TimeOut Solution
+def solution1(para): 
     for candi in range(1, min(para)+1):
         flag = True
         for num in para:
@@ -9,7 +10,7 @@ def solution1(para): # TimeOut Solution
                 flag = False
         if flag:
             print(candi)
-
+################################solution 2################################
 def Euclid(num1, num2):
     if num1 == 0:
         return num2
@@ -24,10 +25,10 @@ def solution2(para):
         if gcd%candi == 0:
             print(candi)
     print(gcd)
-
+##########################################################################
 if __name__ == "__main__":
     n = int(input())
     nums = list(map(int,input().split(" ")))
-    solution1(nums)
-    print()
+    # solution1(nums)
+    # print()
     solution2(nums)
